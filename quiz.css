@@ -1,0 +1,4 @@
+.border{
+  border-color: var(currentCar.color);
+  border-width: 4px;
+}

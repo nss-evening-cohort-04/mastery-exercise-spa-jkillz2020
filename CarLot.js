@@ -3,11 +3,9 @@ var CarLot = (function () {
   var carList = document.getElementById("container");
   carDiv ="";
 
-    var myRequest = new XMLHttpRequest();
-// console.log("myRequest", myRequest);
-myRequest.addEventListener("load", loadCars); //Callback
-// myRequest.addEventListener("error")
-// myRequest.addEventListener("progress")
+var myRequest = new XMLHttpRequest();
+
+myRequest.addEventListener("load", loadCars); 
 myRequest.open("GET", "inventory.json")
 myRequest.send();  
    
@@ -21,22 +19,22 @@ function loadCars() {
   console.log("car data after parse before loop", carData);
   for (var i = 0; i < 3; i++) {
     currentCar = carData[i]; 
-    console.log(currentCar);
 
-  carDiv += `<div class="col-md-4">
+  carDiv += `<div class="col-md-4" style="border:currentCar.color 4px solid">
   <div>${currentCar.make}</div>
   <div>${currentCar.model}</div>
   <div>${currentCar.year}</div>
   <div>${currentCar.price}</div>
+  <div>${currentCar.color}</div>
   <div>${currentCar.description}</div>
   </div>`;
 
   carList.innerHTML = carDiv;
+
   };
 };  
 })();
 
-// Make sure you display all properties of the car in the DOM. Basic styling is up to you.
 // Put a border around the car information that matches the color of the car. To make this easier, set the color property value to an existing named CSS color.
 // When you click on one of the car elements, change the width of the border to a higher value, and change the background color to any other color of your choosing.
 // Also, on click of the car element, clear the value of the text input in the navbar, and put the cursor in the text input.

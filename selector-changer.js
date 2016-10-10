@@ -1,5 +1,5 @@
 var CarLot = (function(carLot) {
-
+carEl = document.getElementsByClassName("border");
 // document.getElementsByClassName("border").style.border= "4px, solid, currentCar.color"
 carLot.borderGrow = function(carEl, color){
   carInfo=this.childNodes[1];

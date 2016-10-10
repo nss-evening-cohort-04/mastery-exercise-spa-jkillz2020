@@ -1,9 +1,7 @@
 var CarLot = (function(carLot) {
-carEl = document.getElementsByClassName("border");
-// document.getElementsByClassName("border").style.border= "4px, solid, currentCar.color"
-carLot.borderGrow = function(carEl, color){
-  carInfo=this.childNodes[1];
-  carInfo.parentElement.classList.toggle("border-grow");
+  carLot.borderGrow = function(carEl, color){
+    carInfo=this.childNodes[1];
+    carInfo.parentElement.classList.toggle("border-grow");
 }
 
 // sedan.setOccupancy = function(occupancy) {
@@ -17,7 +15,6 @@ carLot.borderGrow = function(carEl, color){
 
 return carLot;
 
-console.log("from last iife", carData);
 
 })(CarLot || {});
 

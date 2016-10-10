@@ -1,4 +1,9 @@
 .border{
-  border-color: var(currentCar.color);
+  border-color: lightblue;
   border-width: 4px;
-}
+};
+
+.border-grow{
+  border-width: 7px;
+  background-color: violet;
+};

@@ -1,10 +1,23 @@
 var CarLot = (function(carLot) {
 
 // document.getElementsByClassName("border").style.border= "4px, solid, currentCar.color"
+carLot.borderGrow = function(carEl, color){
+  carInfo=this.childNodes[1];
+  carInfo.parentElement.classList.toggle("border-grow");
+}
 
+// sedan.setOccupancy = function(occupancy) {
+//     if (occupancy <= max_occupancy) {
+//       current_occupancy = occupancy;
+//     } else {
+//       throw "Cannot exceed maximum occupancy of " + max_occupancy;
+//     }
+//   };
 
 
 return carLot;
+
+console.log("from last iife", carData);
 
 })(CarLot || {});
 

@@ -20,7 +20,7 @@ function loadCars() {
   for (var i = 0; i < 3; i++) {
     currentCar = carData[i]; 
 
-  carDiv += `<div class="col-md-4" style="border:currentCar.color 4px solid">
+  carDiv += `<div class="col-md-4 border">
   <div>${currentCar.make}</div>
   <div>${currentCar.model}</div>
   <div>${currentCar.year}</div>
@@ -31,8 +31,15 @@ function loadCars() {
 
   carList.innerHTML = carDiv;
 
+    };
   };
-};  
+
+  return {
+    getInventory: function() {
+      return carData;
+      }
+    };
+  
 })();
 
 // Put a border around the car information that matches the color of the car. To make this easier, set the color property value to an existing named CSS color.

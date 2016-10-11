@@ -8,6 +8,7 @@ var CarLot = (function(carLot) {
     console.log("carEl", carEl);
     for (var i = 0; i < carEl.length; i++) {
         carEl[i].addEventListener("click", function(event) {
+          //description = this.childNodes[1];
       // document.getElementsByClassName("col-md-4 border").addEventListener("click", function(event){
         console.log("event", event);
         input.style.background = "lightgreen";
@@ -19,11 +20,13 @@ var CarLot = (function(carLot) {
                 input.value = "type here";
               };
               input.focus();
-              description = this.childNodes[1];
+              var description = document.getElementsByClassName("description");
               input.addEventListener("keyup", function(event){
                 event.preventDefault();
-                desription.innerHTML = input.value;
+                description.innerHTML = input.value;
+                console.log("description", description);
               });
+          //CarLot.borderGrow();
         })
     }
   }
@@ -37,5 +40,5 @@ var CarLot = (function(carLot) {
 
 
 return carLot;
-
+return carEl;
 })(CarLot || {});

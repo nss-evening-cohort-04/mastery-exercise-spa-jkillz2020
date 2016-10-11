@@ -1,17 +1,10 @@
 var CarLot = (function(carLot) {
-  carLot.borderGrow = function(carEl, color){
-    carInfo=this.childNodes[1];
-    carInfo.parentElement.classList.toggle("border-grow");
+  carLot.borderGrow = function(){
+      var carInfo = document.getElementById("car--${i}")
+     //var color = $currentCar.color;
+    // carInfo=this.childNodes[1];
+    carInfo.classList.toggle("border-grow");
 }
-
-// sedan.setOccupancy = function(occupancy) {
-//     if (occupancy <= max_occupancy) {
-//       current_occupancy = occupancy;
-//     } else {
-//       throw "Cannot exceed maximum occupancy of " + max_occupancy;
-//     }
-//   };
-
 
 return carLot;
 

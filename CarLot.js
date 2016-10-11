@@ -15,19 +15,20 @@ function loadCars() {
   for (var i = 0; i < carData.length; i++) {
     currentCar = carData[i]; 
 
-  carDiv += `<div class="col-md-4 border car" style="border: 2px solid ${currentCar.color}">
+  carDiv += `<div class="col-md-4 border car" style="border: 2px solid ${currentCar.color}" id="car--${i}">
   <div>${currentCar.make}</div>
   <div>${currentCar.model}</div>
   <div>${currentCar.year}</div>
   <div>${currentCar.price}</div>
   <div>${currentCar.color}</div>
-  <div>${currentCar.description}</div>
+  <div class="description">${currentCar.description}</div>
   </div>`;
 
   carList.innerHTML = carDiv;
 
     };
     CarLot.activateEvents();
+    CarLot.borderGrow();
   };
 
   return {

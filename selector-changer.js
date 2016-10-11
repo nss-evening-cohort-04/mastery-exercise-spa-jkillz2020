@@ -1,9 +1,9 @@
 var CarLot = (function(carLot) {
   carLot.borderGrow = function(){
-      var carInfo = document.getElementById("car--${i}")
+      //var carInfo = document.getElementById("car--${i}")
      //var color = $currentCar.color;
-    // carInfo=this.childNodes[1];
-    carInfo.classList.toggle("border-grow");
+     //carInfo=this.childNodes[1];
+    //carInfo.classList.toggle("border-grow");
 }
 
 return carLot;

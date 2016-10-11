@@ -8,9 +8,9 @@ var CarLot = (function(carLot) {
     console.log("carEl", carEl);
     for (var i = 0; i < carEl.length; i++) {
         carEl[i].addEventListener("click", function(event) {
-          //description = this.childNodes[1];
+          //
       // document.getElementsByClassName("col-md-4 border").addEventListener("click", function(event){
-        console.log("event", event);
+        console.log("event", event.currentTarget);
         input.style.background = "lightgreen";
               if(input.value === "type here"){
                 input.value = "";
@@ -21,6 +21,7 @@ var CarLot = (function(carLot) {
               };
               input.focus();
               var description = document.getElementsByClassName("description");
+              description = event.currentTarget.childNodes[7];
               input.addEventListener("keyup", function(event){
                 event.preventDefault();
                 description.innerHTML = input.value;

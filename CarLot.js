@@ -28,7 +28,8 @@ function loadCars() {
 
     };
     CarLot.activateEvents();
-    CarLot.borderGrow();
+    //CarLot.borderGrow();
+    //CarLot.borderReset();
   };
 
   return {

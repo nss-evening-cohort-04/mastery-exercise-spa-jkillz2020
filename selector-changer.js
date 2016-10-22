@@ -1,13 +1,18 @@
 var CarLot = (function(carLot) {
-  carLot.borderGrow = function(){
-      //var carInfo = document.getElementById("car--${i}")
+  carLot.borderGrow = function(event){
+    // var carDivz = document.getElementsByClassName('car');
+    //var carEl = document.getElementById("car--${i}")
      //var color = $currentCar.color;
      //carInfo=this.childNodes[1];
-    //carInfo.classList.toggle("border-grow");
-}
+    event.currentTarget.classList.add("border-grow");
+};
+
+  carLot.borderReset = function(){
+    
+  }
 
 return carLot;
-
+//return carEl;
 
 })(CarLot || {});
 

@@ -17,7 +17,8 @@ var description = "";
           //
       // document.getElementsByClassName("col-md-4 border").addEventListener("click", function(event){
         console.log("event", event.currentTarget);
-        CarLot.borderGrow(event.currentTarget);
+        CarLot.borderGrow(event);
+        //CarLot.borderReset(event);
         input.style.background = "lightgreen";
               if(input.value === "type here"){
                 input.value = "";

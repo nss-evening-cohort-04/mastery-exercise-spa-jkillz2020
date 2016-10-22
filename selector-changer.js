@@ -7,8 +7,8 @@ var CarLot = (function(carLot) {
     event.currentTarget.classList.add("border-grow");
 };
 
-  carLot.borderReset = function(){
-    
+  carLot.borderReset = function(event){
+    event.currentTarget.classList.remove("border-grow");
   }
 
 return carLot;

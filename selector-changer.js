@@ -1,19 +1,23 @@
 var CarLot = (function(carLot) {
   carLot.borderGrow = function(event){
-    event.currentTarget.classList.add("grow");
+    event.currentTarget.classList.add("cat");
 };
 
-  // carLot.borderReset = function(event){
-  //   event.currentTarget.classList.remove("border-grow");
-  // }
-
+  carLot.borderReset = function(event){
+    if (event.currentTarget.hasAttribute("cat")){
+      
+      event.currentTarget.classList.remove("cat");
+  }
+}
 return carLot;
 
 })(CarLot || {});
 
 
-
-
+// var cell =document.querySelectorAll('.cell');
+// for(var i=0;i<cell.length;i++){
+//   cell[i].addEventListener('mouseover',callback,false);
+// }
 
 
 

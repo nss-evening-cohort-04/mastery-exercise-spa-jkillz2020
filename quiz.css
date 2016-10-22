@@ -1,9 +1,10 @@
-.my-border{
-  border-width: 2px;
+.cat{
+  border-width: 17px;
+  background-color: orange;
   border-style: solid;
 };
 
-.grow{
-  border-width: 17px;
-  background-color: orange;
+.my-border{
+  border-width: 2px;
+  border-style: solid;
 };

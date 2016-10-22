@@ -8,7 +8,7 @@ var description = "";
       event.preventDefault();
       description.text(input.value);
       console.log("description", description);
-      CarLot.borderGrow(carEl);
+      //CarLot.borderGrow(carEl);
     });
     
     console.log("carEl", carEl);
@@ -17,9 +17,9 @@ var description = "";
           //
         console.log("event", event.currentTarget);
         CarLot.borderGrow(event);
-        //CarLot.borderReset(event);
+        CarLot.borderReset(event);
         input.style.background = "lightgreen";
-              if(input.value === "type here"){
+              if(input.value != ""){
                 input.value = "";
               }
               else if(input.value === ""){
@@ -30,6 +30,7 @@ var description = "";
               description = $(event.currentTarget).find(".description");
         })
     }
+    
 
   }
 

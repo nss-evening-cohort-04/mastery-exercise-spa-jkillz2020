@@ -1,0 +1,10 @@
+.cat{
+  border-width: 17px;
+  background-color: orange;
+  border-style: solid;
+};
+
+.my-border{
+  border-width: 2px;
+  border-style: solid;
+};

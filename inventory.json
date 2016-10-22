@@ -1,0 +1,28 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "red",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Subaru",
+      "model": "WRX STi",
+      "year": "2015",
+      "price": "35,000",
+      "color": "lightblue",
+      "description": "This is an immaculate 2015 Subaru WRX STi with only 5000 miles on it. Leather seats, AWD, 300HP."
+    },
+    {
+    "make": "Chevrolet",
+      "model": "Corvette ZR1",
+      "year": "2016",
+      "price": "118,999",
+      "color": "darkgrey",
+      "description": "This is an immaculate 2016 Chevrolet Corvette with only 300 miles on it. Leather seats, power everything."
+    }
+  ]
+}

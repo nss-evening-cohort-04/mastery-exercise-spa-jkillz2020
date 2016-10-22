@@ -15,7 +15,7 @@ function loadCars() {
   for (var i = 0; i < carData.length; i++) {
     currentCar = carData[i]; 
 
-  carDiv += `<div class="col-md-4 border car" style="border: 2px solid ${currentCar.color}" id="car--${i}">
+  carDiv += `<div class="col-md-4 my-border car" style="border-color: ${currentCar.color}" id="car--${i}">
   <div>${currentCar.make}</div>
   <div>${currentCar.model}</div>
   <div>${currentCar.year}</div>

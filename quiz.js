@@ -15,7 +15,6 @@ var description = "";
     for (var i = 0; i < carEl.length; i++) {
         carEl[i].addEventListener("click", function(event) {
           //
-      // document.getElementsByClassName("col-md-4 border").addEventListener("click", function(event){
         console.log("event", event.currentTarget);
         CarLot.borderGrow(event);
         //CarLot.borderReset(event);
@@ -33,15 +32,6 @@ var description = "";
     }
 
   }
-  // sedan.setOccupancy = function(occupancy) {
-  //   if (occupancy <= max_occupancy) {
-  //     current_occupancy = occupancy;
-  //   } else {
-  //     throw "Cannot exceed maximum occupancy of " + max_occupancy;
-  //   }
-  // };
 
-
-//return carEl;
 return carLot;
 })(CarLot || {});

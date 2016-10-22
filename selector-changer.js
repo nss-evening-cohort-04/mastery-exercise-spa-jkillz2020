@@ -1,18 +1,13 @@
 var CarLot = (function(carLot) {
   carLot.borderGrow = function(event){
-    // var carDivz = document.getElementsByClassName('car');
-    //var carEl = document.getElementById("car--${i}")
-     //var color = $currentCar.color;
-     //carInfo=this.childNodes[1];
-    event.currentTarget.classList.add("border-grow");
+    event.currentTarget.classList.add("grow");
 };
 
-  carLot.borderReset = function(event){
-    event.currentTarget.classList.remove("border-grow");
-  }
+  // carLot.borderReset = function(event){
+  //   event.currentTarget.classList.remove("border-grow");
+  // }
 
 return carLot;
-//return carEl;
 
 })(CarLot || {});
 
